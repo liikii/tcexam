@@ -67,4 +67,16 @@
     #     pathName cget option
     #     pathName configure ?option? ?value option value ...?
 
+# toplevel .top -width 320 -height 240
+# wm title .top "My Window"
+
+# toplevel .top
+# button .top.b -text "Close Me" -command {destroy .top}
+# pack .top.b
+
+# toplevel .top
+label .msg -text "This is my Custom Dialog"
+button .ok -text "OK" -command {destroy .top}
+pack .ok -side bottom -fill x
+pack .msg -expand 1 -fill both
 
