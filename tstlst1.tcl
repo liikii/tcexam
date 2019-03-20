@@ -27,6 +27,7 @@ puts "$1 $2 $3"
 
 # lindex list index1 index2 ...
 set input {John Mary Bill}
+puts [lindex $input 1]
 
 # linsert list index element1 element2 ...
 set input {John Mary Bill}
