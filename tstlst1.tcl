@@ -57,3 +57,7 @@ puts [lreplace {a b c d e} 1 2 X Z]
 # lreverse list
 puts [lreverse {a b c d e}]
 
+set input {John Mary Fred}
+lset input 1 Tom
+puts $input
+
