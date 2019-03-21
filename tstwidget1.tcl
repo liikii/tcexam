@@ -75,8 +75,50 @@
 # pack .top.b
 
 # toplevel .top
-label .msg -text "This is my Custom Dialog"
-button .ok -text "OK" -command {destroy .top}
-pack .ok -side bottom -fill x
-pack .msg -expand 1 -fill both
+# label .msg -text "This is my Custom Dialog"
+# button .ok -text "OK" -command {destroy .top}
+# pack .ok -side bottom -fill x
+# pack .msg -expand 1 -fill both
+
+# frame
+# frame .f
+# button .f.b -text "My Button"
+
+
+# frame .f -width 160 -height 90 -borderwidth 5 -relief raised
+# pack .f
+
+# label
+# label .l -text "My Label"
+# pack .l
+
+# entry
+# entry .e -borderwidth 7 -width 500
+# pack .e
+
+
+
+# proc updater { } {
+#        .l configure -text "Updated"
+# }
+
+# label .l -width 70 -borderwidth 3 -text Original
+
+# button .b -text Update -command updater
+# pack .l -side top
+# pack .b -side bottom
+
+# listbox .l -borderwidth 3 -height 10 -width 25
+# pack .l
+# set x 1
+# while {$x < 10} {
+#     .l insert end $x;
+#     incr x; 
+# }
+
+
+# /Users/lbadvisor/tmp/gaga1a.jpg
+# image create photo image1 -file "/Users/lbadvisor/tmp/gaga1a.gif" -width 400 -height 400 
+# label .l -image image1
+# pack .l
 
