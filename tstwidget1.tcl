@@ -1,4 +1,8 @@
-#! /usr/bin/wish
+#! /usr/local/bin/tclsh8.6
+package require Tk
+package require img::jpeg 
+# tclRequire("Img")
+# puts [package names]
 # bell        grab         scale                 tk_optionMenu     ttk::menubutton   
 # bind        grid         scrollbar             tk_patchLevel     ttk::notebook     
 # bindtags    image        selection             tk_popup          ttk::panedwindow  
@@ -93,8 +97,8 @@
 # pack .l
 
 # entry
-# entry .e -borderwidth 7 -width 500
-# pack .e
+entry .e -borderwidth 7 -width 500
+pack .e
 
 
 
@@ -118,7 +122,19 @@
 
 
 # /Users/lbadvisor/tmp/gaga1a.jpg
-# image create photo image1 -file "/Users/lbadvisor/tmp/gaga1a.gif" -width 400 -height 400 
-# label .l -image image1
+# image create photo image1 -file "https://www.usenix.org/legacy/graphics/usenix.solo.gif" -width 400 -height 400 
+# image create photo idir -data {
+#     R0lGODdhEAAQAPIAAAAAAHh4eLi4uPj4APj4+P///wAAAAAAACwAAAAAEAAQAAADPVi63P4w
+#     LkKCtTTnUsXwQqBtAfh910UU4ugGAEucpgnLNY3Gop7folwNOBOeiEYQ0acDpp6pGAFArVqt
+#     hQQAO///
+# }
+# image create photo ibg -data {
+#     R0lGODdhIAAbAJEAAAAAAP///wAA/wAAACwAAAAAIAAbAAACeoyPqYvgD6Oc
+#     LwAhHN758v6BgMVpn1l6KXmqG/q6mQVjNdi+7M3LImvz9UIOYIwolI0eyGbO
+#     tks6UzPX8LmSYo8lmpaKXQanXKq4jB63jGqwG8rctsvn63t8nutxWfK+tmSX
+#     xlf3NaiRx3eYxKb4p+Tl50joRWF5OVIAADs=
+# }
+
+# label .l -image ibg
 # pack .l
 
